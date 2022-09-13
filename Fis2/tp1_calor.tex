@@ -1,0 +1,152 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\graphicspath{ {/home/franco/Facultad/Fis2/} }
+
+\newcommand\vspt{15pt}
+\newcommand\vsp{10pt}
+\newcommand\celc{^\circ C}
+
+
+\newcommand\tpn{1}
+\newcommand\tptitle{Medición de calor específico}
+\newcommand\tpsubj{Fisica II}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}\Huge{Trabajo Práctico \tpn: \tptitle\\
+\vspace{\vspt}
+\tpsubj}\end{center}
+
+\vspace{\vspt}
+\includegraphics[width=\linewidth]{utnlogo}
+
+\vspace{\vspt}
+\begin{center}\Huge{Franco Cosolito}\end{center}
+
+\vspace{\vspt}
+\begin{center}\Large{ISI C}\end{center}
+\pagebreak
+
+\setcounter{page}{1}
+\begin{center}\textbf{Objetivos}\end{center}
+Medir el calor específico del alcohol etílico
+ utilizando el método de las mezclas.\\
+\vspace{\vsp}
+
+\begin{center}\textbf{Marco teórico}\end{center}
+\textbf{Equilibrio Térmico:} Dos cuerpos estan en equilibrio térmico 
+si y solo si tienen la misma temperatura. Cuando esto ocurre
+no se transfiere mas calor entre ellos.\\
+\textbf{Temperatura:} Con la definición de equilibrio térmico
+también se puede definir a la temperatura, es la propiedad de
+los cuerpos que determina si estan o no en equilibrio 
+térmico.\\
+\textbf{Capacidad Calorífica:} Es la energía necesaria para elevar 
+la temperatura de una masa, relaciona la energia termica
+o calor y la variación de temperatura de un cuerpo:
+$ Q = C \Delta T $\\
+\textbf{Calor Específico:} Es la capacidad calorífica de una 
+sustancia por unidad de masa: 
+$ c = C/m = Q/{m \Delta T } $
+\vspace{\vsp}
+
+\begin{center}\textbf{Materiales}\end{center}
+Para el trabajo práctico se emplearon los siguientes materiales:\\
+\begin{itemize}
+        \item Termo o calorímetro, para lograr condiciones cercanas a un sistema
+                adiabático.
+        \item Matraz aforado, para medir volumenes de agua.
+        \item Balanza, para medir la masa del agua y el alcohol.
+        \item Embudo.
+        \item Termómetro, para medir las temperaturas.
+\end{itemize}
+                
+\pagebreak
+\begin{center}\textbf{Procedimiento}\end{center}
+El objetivo del procedimiento es calcular el valor del calor 
+específico del alcohol etílico. Para eso, el primer paso es
+identificar que datos se deben medir.\\
+Como el sistema que se va a emplear para realizar las mediciones
+es adiabático, se debe cumplir que el calor cedido por cualquiera
+de sus cuerpos o sustancias sea absorbido por otra parte del 
+sistema, es decir $Q_{cedido} = Q_{absorbido}$.\\
+Si se mezclan alcohol etílico y agua en el termo y 
+utilizando la ecuacion del calor transferido en función de la 
+masa, el calor específico y la variación de la temperatura:
+$Q = m.c.\Delta T$, se debe cumplir que 
+$$m_{ag}.c_{ag}.\Delta T_{ag} + m_{al}.c_{al}.\Delta T_{al} + Q_{termo} = 0$$
+En principio se conocen el calor específico y la masa del agua
+y se puede medir con un termómetro su temperatura (en equilibrio
+térmico con el termo), pero se desconocen las sustancias que 
+contiene el termo. Entonces primero debe calcularse de otra
+forma que cantidad de calor representa $Q_{termo}$.
+Para esto se plantea un procedimiento similar al descrito para
+el caso del alcohol etílico, en el termo se mezclan dos volúmenes
+de agua a diferente temperatura y se analizan las variaciones
+para despejar la energía que absorbe el termo y poder calcular
+su calor específico:\\
+$$m_{ag1}.c_{ag1}.\Delta T_{ag1} + m_{ag2}.c_{ag2}.\Delta T_{ag2} + m_{ter} 
+.c_{ter}.\Delta T_{ag1} = 0$$\\
+En la ecuación planteada, es posible medir todas las variables 
+de un experimento, exeptuando por el calor específico del termo
+que luego se puede calcular.\\
+Para representar el calor absorbido por el termo, se plantea una masa de 
+agua $\pi$ tal que su capacidad calorífica sea igual a la del termo, es decir:
+$$ C_{agua} = C_{termo}$$
+$$c_{agua}.\pi = c_{termo}.m_{termo}$$
+$$\pi = \frac{c_{termo}.m_{termo}}{c_{agua}}$$
+Entonces:
+$$m_{ag1}.c_{ag}.\Delta T_{ag1} + m_{ag2}.c_{ag}.\Delta T_{ag2} + \pi 
+.c_{ag}.\Delta T_{ag1} = 0$$\\
+Entonces el primer paso de la experiencia es pesar una cantidad inicial
+de agua natural y agregarla al termo, esperar a que alcance el equilibrio térmico
+con el recipiente y medir la temperatura con el termómetro.
+En la experiencia, la masa de agua fue de 200g y la temperatura en equilibrio
+fue de $24.1 \celc$.\\
+Luego se mide la temperatura de una masa de 113.5g de agua caliente y se la agrega al 
+termo mezclándola con el agua fría. Cuando esta mezcla y el termo lleguen
+al equilibrio térmico, se mide la temperatura, que es el valor final de las 
+variaciones $\Delta T$.
+En la experiencia el agua caliente tenía una temperatura de $70 \celc$ y la 
+temperatura final fue $39.9 \celc$. Además, se conoce el valor del calor
+específico del agua: $4,186$ $J/{g\celc}$.\\
+Entonces, despejando $\pi$ y sustituyendo los valores:\\
+$$\pi = -\frac{m_{ag1}.\Delta T_{ag1} + m_{ag2}.\Delta T_{ag2}}{\Delta T_{ag1}}$$
+\vspace{\vsp}
+$$\pi = -\frac{200g.(39.9\celc - 24.1\celc) + 113.5g.(39.9\celc - 70\celc)}{(39.9\celc - 24.1\celc)}$$
+\vspace{\vsp}
+$$\pi = 16.22g$$
+Con el valor $\pi$ se puede plantear la primera ecuación de manera que
+$$Q_{termo} = \pi.c_{ag}.\Delta T$$
+\vspace{\vsp}
+$$m_{ag}.c_{ag}.\Delta T_{ag} + m_{al}.c_{al}.\Delta T_{al} + \pi.c_{ag}.\Delta T_{ag} = 0$$
+\vspace{\vsp}
+$$c_{al} = -\frac{m_{ag}.c_{ag}.\Delta T_{ag} + \pi.c_{ag}.\Delta T_{al}}{m_{al}.\Delta T_{al}}$$
+Luego el procedimiento consiste en agregar al calorímetro 200g de alcohol etílico
+y esperar a que alcance el equilibrio térmico con el recipiente, en la experiencia
+la temperatura de equilibrio fue de $27\celc$. Con el sistema en equilibrio se
+agregan $99.8g$ de agua caliente, en la experiencia a $72\celc$, que alcanza 
+el equilibrio con la mezcla en $45.9\celc$. Entonces, luego de tomar las mediciones
+con el termómetro en cada paso se puede resolver la ecuación planteada, considerando
+también que $\Delta T_{\pi} = \Delta T_{al}$ ya que el alcohol inicialmente se 
+encuentra en equilibrio térmico con el calorímetro y luego alcanzan el equilibrio
+nuevamente con el agua caliente.
+$$c_{al} = -\frac{99.8g.4,186J/g.(45.9\celc - 72\celc) + 16.22g.4,186J/g.(45.9\celc - 27\celc)}
+{200g.(45.9\celc - 27\celc)}$$
+\vspace{\vsp}
+$$c_{al} = 2.54J/g$$
+El valor para el calor específico del alcohol etílico obtenido de la experiencia
+es $2.54$ $J/g$.
+\pagebreak
+\begin{center}\textbf{Conclusión}\end{center}
+La experiencia realizada en el trabajo práctico permite y calcular
+por el metodo de la mezcla el valor del calor específico de una sustancia
+midiendo y analizando los cambios de temperatura entre las partes de un sistema
+debidos a la transferencia de calor.
+\end{document}
