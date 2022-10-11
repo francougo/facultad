@@ -1,0 +1,103 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\graphicspath{ {/home/franco/Facultad/} }
+
+\newcommand\vspt{15pt}
+\newcommand\vsp{10pt}
+
+
+\newcommand\tpn{5}
+\newcommand\tptitle{Estudio de un circuito RC}
+\newcommand\tpsubj{Física II}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{center}\Huge{Trabajo Práctico \tpn: \tptitle\\
+\vspace{\vspt}
+\tpsubj}\end{center}
+
+\vspace{\vspt}
+\includegraphics[width=\linewidth]{utnlogo}
+
+\vspace{\vspt}
+\begin{center}\Huge{Franco Cosolito}\end{center}
+
+\vspace{\vspt}
+\begin{center}\Large{ISI C}\end{center}
+\pagebreak
+
+\setcounter{page}{1}
+
+\section{Marco teórico}
+En este trabajo práctico se trabaja con un circuito RC para estudiar la carga
+y descarga de su capacitor. Por lo tanto es importante tener en cuenta las
+reglas de Kirchhoff y las ecuaciones que describen a la carga, la corriente
+y el potencial eléctrico en función del tiempo para el circuito en carga y
+en descarga.
+\subsection{Reglas de Kirchhoff}
+\begin{itemize}
+    \item $\sum I = 0$ : Para cualquier unior de tres o mas conductores la suma
+       de todas las corrientes es cero, es decir, la misma corriente que ingresa
+       un conductor sale por los demás.
+    \item $\sum V = 0$ : Si se recorre cualquier espira volviendo al punto inicial
+        del circuito la suma de las FEM y caidas de tensión debe ser cero.
+\end{itemize}
+\subsection{Carga, corriente y potencial como funciones del tiempo}
+\begin{itemize}
+    \item Para un circuito en carga, es decir con una fuente que aporte una FEM:
+        $$q=Q_f(1-e^{-t/RC})$$ 
+        $$i=I_0e^{-t/RC}$$ 
+        $$v_R=\mathcal{E} e^{-t/RC}$$
+        $$v_C=\mathcal{E} (1-e^{-t/RC})$$
+    \item Para un circuito en descarga:
+        $$q=Q_0e^{-t/RC}$$ 
+        $$i=I_0e^{-t/RC}$$ 
+        $$v_R=v_C=\mathcal{E} e^{-t/RC}$$ 
+\end{itemize}
+        
+
+
+\section{Materiales}
+    materiales
+
+\pagebreak
+\section{Procedimiento}
+Para medir la corriente y el potencial electrico primero se construyó un circuito
+RC, este circuito consta de una fuente que aporta una FEM $\mathcal{E}$ seguido por
+un capacitor con capacitancia $C=4700\times10^{-6}F$ y 
+una resistencia $R=10860\;\Omega$, ubicados en serie en el circuito
+inicialmente abierto. Luego, para efectuar las mediciones, se colocaron dos multímetros,
+uno como voltímetro y el otro como amperímetro, en paralelo y en serie respectivamente.\\
+Luego se configuró la fuente para que brinde una FEM de 15 Volts.
+Con el circuito ya configurado se cerró el circuito permitiendo que circule corriente,
+esto provocó que el capacitor se empiece a cargar, aumentando su diferencia de potencial
+y disminuyendo la corriente del circuito. Se mantuvo el circuito en esta configuracion por
+la cantidad de tiempo $\tau = RC = 51\;s$ para la cual el capacitor adquiere un potencial
+de $\mathcal{E}(1-1/e) = 0.63\mathcal{E}$. Luego (con una carga diferente en el capacitor)
+se quitó la fuente y se volvió a cerrar el circuito, permitiendo nuevamente que circule
+corriente pero en este caso en sentido opuesto al anterior, ya que la corriente se debe
+a la diferencia de potencial del capacitor unicamente ya que no hay mas FEM de la fuente.
+Entonces la corriente parte de un valor máximo y disminuye a medida que pasa el tiempo
+y el capacitor se descarga, disminuyendo tambien su voltaje.
+\subsection{Carga del capacitor}
+\begin{tabular}{ || c | c || }
+    \hline
+    $I$ & $V_c$\\
+    \hline\hline
+    1,344 & 0\\
+    \hline
+\end{tabular}
+\pagebreak
+\section{Conclusión}
+La experiencia realizada en el trabajo práctico permite y calcular
+por el metodo de la mezcla el valor del calor específico de una sustancia
+midiendo y analizando los cambios de temperatura entre las partes de un sistema
+debidos a la transferencia de calor.
+\end{document}
